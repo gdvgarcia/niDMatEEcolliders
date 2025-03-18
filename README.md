@@ -55,9 +55,9 @@ We follow the particle identification number (particle_id) conventions of https:
 
 For each production channel we have the following events form: 
 
-| Channel  | Event data |
+| Channel  | EVENT |
 | ------------- | ------------- |
-| e+e- -> A' gamma  | EVENT = { {22,E_gamma,p1_gamma,p2_gamma,p3_gamma}, {-22,E_A',p1_A',p2_A',p3_A'} } |
-| Content Cell  | Content Cell  |
+| e+e- -> A' gamma  |  { {22,E,p1,p2,p3}, {-22,E,p1,p2,p3} } |
+| e+e- -> A' h'  | { {-22,E,p1,p2,p3}, {-25,E,p1,p2,p3} }  |
 
   
