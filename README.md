@@ -19,7 +19,7 @@ To run our package, two tools have to be installed: Wolfram Mathematica (tested 
 
 A generic niDM model with a dark photon and/or a dark Higgs mediator is implemented (see the generic niDM approach in [2505.XXXXX](https://arxiv.org/abs/2505.xxxxx)). 
 
-Generating channels available: e+e- -> gamma A' , e+e- -> h' A' , e+e- -> Psi -> BB -> K h' , e+e- -> Psi -> BB -> K h'h' . All computed at tree-level.
+Generating channels available: e+e- -> gamma A' , e+e- -> h' A' , e+e- -> Upsilon(4S) -> BB -> K h' , e+e- -> Upsilon(4S) -> BB -> K h'h' . All computed at tree-level.
 
 We decompose the whole events into steps (first generates the intermediate mediator and then make the mediator decay -- it ignores the decay width of the mediator, see comments on this topic in [2405.08081](https://arxiv.org/abs/2405.08081) and [1911.03176](https://arxiv.org/abs/1911.03176).
 
