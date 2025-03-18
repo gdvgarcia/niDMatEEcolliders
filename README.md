@@ -15,7 +15,7 @@ Download the full directory and check the example code included.
 To run our package, two tools have to be installed: Wolfram Mathematica (tested on version 13.1) and a C compiler. 
 
 
-## (Currently) generators implemented TBC
+## Generation channels implemented
 
 A generic niDM model with a dark photon and/or a dark Higgs mediator is implemented (see the generic niDM approach in [2505.XXXXX](https://arxiv.org/abs/2505.xxxxx)). 
 
@@ -24,7 +24,7 @@ Generating channels available: e+e- -> A' gamma , e+e- -> A' h' , e+e- -> Psi ->
 We decompose the whole events into steps (first generates the intermediate mediator and then make the mediator decay -- it ignores the decay width of the mediator, see comments on this topic in [2405.08081](https://arxiv.org/abs/2405.08081) and [1911.03176](https://arxiv.org/abs/1911.03176).
 
 
-## (Currently) analyses implemented TBC
+## Analyses implemented
 
 Missing energy analysis (rescaling)
 Displaced vertices searches (both ono and di-decays)
