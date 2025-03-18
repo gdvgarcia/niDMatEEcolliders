@@ -58,6 +58,6 @@ For each production channel we have the following events form:
 | Channel  | EVENT |
 | ------------- | ------------- |
 | e+e- -> gamma A'  |  { {22,E,p1,p2,p3}, {-22,E,p1,p2,p3} } |
-| e+e- -> h' A'  | { {-22,E,p1,p2,p3}, {-25,E,p1,p2,p3} }  |
+| e+e- -> h' A'  | { {-25,E,p1,p2,p3}, {-22,E,p1,p2,p3} }  |
 
   
