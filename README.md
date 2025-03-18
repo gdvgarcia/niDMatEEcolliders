@@ -9,6 +9,7 @@ This package is a Mathematica-based code allowing to calculate constraints/sensi
 
 Download the full directory and check the example code included.
 
+
 ### Dependencies
 
 To run our package, two tools have to be installed: Wolfram Mathematica (tested on version 13.1) and a C compiler. 
@@ -22,6 +23,7 @@ Generating channels available: e+e- -> A' gamma , e+e- -> A' h' , e+e- -> Psi ->
 
 We decompose the whole events into steps (first generates the intermediate mediator and then make the mediator decay -- it ignores the decay width of the mediator, see comments on this topic in [2405.08081](https://arxiv.org/abs/2405.08081) and [1911.03176](https://arxiv.org/abs/1911.03176).
 
+
 ## (Currently) analyses implemented TBC
 
 Missing energy analysis (rescaling)
@@ -30,10 +32,14 @@ Displaced vertices searches (both ono and di-decays)
 Last, we currently only focused on BaBar and Belle II. Although, considering other e+e- colliders should not be a difficult task.
 
 
-
 ## Code structure TBC
 
+Here, we briefly describe the code structure. The code is divided into three parts:
+1. Initial mediator generator
+2. Mediator decays
+3. Further decays
 
+The step one generates all initial mediators together with associated SM particles (user chooses the production channels). Then, the step two decays the mediators into dark sector or SM particles (user chooses the decay channels). Finally, the step three can be used in case the mediator decays into dark sector particles which in turn can be further decayed into SM or dark sector particles (all depends on the user's choices). 
 
 ### Initial mediator generator TBC 
 
@@ -42,7 +48,8 @@ For processeses coming from Psi decays, we simply follow the particles decay cha
 
 The final data from this first generator is an output of the form:
 
-{EVENT1,EVENT2,...} where each event is of the type: EVENT = {{particle_id,E,p1,p2,p3},{particle_id,E,p1,p2,p3},...} where the particle_id is a number identifying each particle and P={E,p1,p2,p3} the particle 4-momentum.
+{EVENT1,EVENT2,...} where each event is of the type: 
+EVENT = { {particle_id,E,p1,p2,p3}, {particle_id,E,p1,p2,p3}, ... } where the particle_id is a number identifying each particle and P={E,p1,p2,p3} the particle 4-momentum.
 
 We follow the particle identification number (particle_id) conventions of https://pdg.lbl.gov/2007/reviews/montecarlorpp.pdf . We use the id -22 for A', -25 for h' and 51 for the ground state \chi while -51 for the excited state \chi* .
 
@@ -50,7 +57,7 @@ For each production channel we have the following events form:
 
 | Channel  | Event data |
 | ------------- | ------------- |
-| e+e- -> A' gamma  | EVENT = {{particle_id,E,p1,p2,p3},{particle_id,E,p1,p2,p3},...} |
+| e+e- -> A' gamma  | EVENT = { {22,E_gamma,p1_gamma,p2_gamma,p3_gamma}, {-22,E_A',p1_A',p2_A',p3_A'} } |
 | Content Cell  | Content Cell  |
 
   
